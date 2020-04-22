@@ -54,8 +54,12 @@ class CustomAdapter(val context: Context, private val arrayList: ArrayList<state
                 statename.text = user.state
                 active.text=user.active
                 confirmed.text=user.confirmed
+                deltacnf.text="↑ "+user.deltaconfirmed
                 recovered.text=user.recovered
+                deltaactv.text="↑ 0"
+                deltarcvr.text="↑ "+user.deltarecovered
                 deceased.text=user.deaths
+               deltadecs.text= "↑ "+user.deltadeaths
             }
 
 //        with(itemView){

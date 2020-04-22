@@ -21,7 +21,6 @@ class MainActivity : AppCompatActivity() {
             .build()
 
     val service = retrofitClient.create(GetDataService::class.java)
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
