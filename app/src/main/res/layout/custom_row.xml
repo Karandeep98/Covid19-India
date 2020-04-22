@@ -1,43 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:id="@+id/card_view_friend"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    card_view:cardUseCompatPadding="true">
+    card_view:cardUseCompatPadding="true"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+
         >
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:id="@+id/statename"
+            android:text="StateName"
+            android:paddingLeft="5dp"
             android:textStyle="bold"
-            android:textSize="18sp"/>
+            android:layout_weight="1"
+            android:textSize="16sp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/confirmed"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
+            android:text="Confirmed"
+            android:textAlignment="textEnd"
+            android:layout_weight="1"
+            android:textSize="16sp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/active"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
+            android:text="Active"
+            android:textAlignment="textEnd"
+            android:layout_weight="1"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recovered"
+            android:text="Recovered"
+            android:textAlignment="textEnd"
+            android:layout_weight="1"
+            android:textSize="16sp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/deceased"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
+            android:textAlignment="textEnd"
+            android:text="Deceased"
+            android:layout_weight="1"
+             android:textSize="16sp"
+            android:paddingRight="10dp"/>
 
     </LinearLayout>
-
-</androidx.cardview.widget.CardView>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/grey"
+    />
+</LinearLayout>

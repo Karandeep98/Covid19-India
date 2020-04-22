@@ -40,8 +40,8 @@ class MainActivity : AppCompatActivity() {
                     rview.layoutManager = LinearLayoutManager(this@MainActivity, LinearLayoutManager.VERTICAL,false)
                     rview.adapter = CustomAdapter(this@MainActivity, response.body()!!.statewise)
 //                    Picasso.get().load(response.body()?.Poster.toString()).into(image)
-                    val snapHelper = PagerSnapHelper()
-                    snapHelper.attachToRecyclerView(rview)
+//                    val snapHelper = PagerSnapHelper()
+//                    snapHelper.attachToRecyclerView(rview)
 
 
                 }

@@ -54,6 +54,7 @@ class CustomAdapter(val context: Context, private val arrayList: ArrayList<state
                 statename.text = user.state
                 active.text=user.active
                 confirmed.text=user.confirmed
+                recovered.text=user.recovered
                 deceased.text=user.deaths
             }
 
