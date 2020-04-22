@@ -24,7 +24,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        setSupportActionBar(toolbar)
+        //supportActionBar?.setDisplayHomeAsUpEnabled(true)
         service.getinfo().enqueue(object : Callback<statelist2> {
             override fun onFailure(call: Call<statelist2>, t: Throwable) {
                 Snackbar.make(root,"No Internet Connection", Snackbar.LENGTH_INDEFINITE).show()
